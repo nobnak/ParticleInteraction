@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Trail/Viscosity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Soul/Soul.cs">
     <Files>
-      <File FileName="Assets/Trail/Viscosity.cs" Line="36" Column="15" />
+      <File FileName="Assets/Soul/Soul.cs" Line="19" Column="3" />
+      <File FileName="Assets/Soul/SoulController.cs" Line="25" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,9 +11,10 @@
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Fireworks02" expanded="True" />
-              <Node name="Trail" expanded="True">
-                <Node name="Viscosity.cs" selected="True" />
+              <Node name="Soul" expanded="True">
+                <Node name="Soul.cs" selected="True" />
               </Node>
+              <Node name="Trail" expanded="True" />
             </Node>
           </Node>
         </State>
