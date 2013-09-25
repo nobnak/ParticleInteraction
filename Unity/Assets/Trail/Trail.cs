@@ -23,10 +23,9 @@ public class Trail : MonoBehaviour {
 		
 		decimation = Mathf.Clamp(decimation, 0.0f, 1.0f );
 		
-		accumulator.SetTexture("_MainTex", source);
+		accumulator.SetTexture("_MainTex", prevTex);
 		accumulator.SetFloat("_Decimation", decimation);
 		
-		Graphics.Blit(source, prevTex, accumulator);
-		Graphics.Blit(prevTex, destination);
+		Graphics.Blit(source, destination, accumulator);
 	}
 }
