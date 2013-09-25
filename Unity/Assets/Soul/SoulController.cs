@@ -11,10 +11,17 @@ public class SoulController : MonoBehaviour {
 	public Vector3 endVelocity;
 	
 	private HashSet<Soul> _souls;
+	private float _initialScale, _targetScale;
 
 	void Start () {
 		_souls = new HashSet<Soul>();
 		StartCoroutine("Generator");
+		_initialScale = _targetScale = target.localScale.x;
+	}
+	
+	void Update() {
+		target.localScale = _targetScale * Vector3.one;
+		_targetScale = Mathf.Lerp(_targetScale, _initialScale, 0.1f);
 	}
 	
 	IEnumerator Generator() {
@@ -30,6 +37,7 @@ public class SoulController : MonoBehaviour {
 	}
 	
 	void HandleOnArrive(Soul soul) {
+		_targetScale = 2f * _initialScale;
 		_souls.Remove(soul);
 	}
 }
