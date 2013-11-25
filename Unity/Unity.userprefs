@@ -1,20 +1,31 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Soul/Soul.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Toei/Toei.shader">
     <Files>
-      <File FileName="Assets/Soul/Soul.cs" Line="19" Column="3" />
-      <File FileName="Assets/Soul/SoulController.cs" Line="25" Column="21" />
+      <File FileName="../../Shader/Assets/WhiteOkami/WhiteOkami.shader" Line="4" Column="10" />
+      <File FileName="Assets/Common/CoonsCurve.cs" Line="18" Column="3" />
+      <File FileName="Assets/Soul/Soul.cs" Line="9" Column="23" />
+      <File FileName="Assets/Soul/SoulController.cs" Line="10" Column="26" />
+      <File FileName="Assets/Toei/Editor/ToeiMeshGen.cs" Line="10" Column="46" />
+      <File FileName="Assets/Toei/Toei.shader" Line="7" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Assets" expanded="True">
+              <Node name="Common" expanded="True" />
               <Node name="Fireworks02" expanded="True" />
-              <Node name="Soul" expanded="True">
-                <Node name="Soul.cs" selected="True" />
-              </Node>
+              <Node name="Soul" expanded="True" />
               <Node name="Trail" expanded="True" />
+            </Node>
+          </Node>
+          <Node name="Assembly-CSharp-Editor" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Toei" expanded="True">
+                <Node name="Editor" expanded="True" />
+                <Node name="Toei.shader" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
