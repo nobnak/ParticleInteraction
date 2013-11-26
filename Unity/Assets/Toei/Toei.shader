@@ -30,19 +30,23 @@ Shader "Custom/Toei" {
 	
 			v2f vert(appdata_full i) {
 				v2f o;
-				float t0 = i.color.r;
-				float t1 = i.color.g;
+				//float t0 = i.color.r;
+				//float t1 = i.color.g;
+				float t0 = _Color.r;
+				float t1 = _Color.g;
 				
-				float4 pos = mul(UNITY_MATRIX_MV, i.vertex);
-				float phi = t1 * 1.57079632679;
-				float sinphi = sin(phi);
-				pos.y *= 1.0 + _Stretch * pow(sinphi, 0.5);
-				
+				float scale = _Stretch * pow(t1, 3.0);
 				float theta = (t0 + (t0 > 0.5 ? t1 : -t1) * 0.05) * 6.28318530718;
-				float2x2 M = float2x2(cos(theta), -sin(theta), sin(theta), cos(theta));
-				pos.xy = mul(M, pos.xy);
+				float2x2 C = float2x2(0.5, -0.5, 0, 1);
+				float2x2 S = float2x2(1, 0, 0, scale);
+				float2x2 R = float2x2(cos(theta), -sin(theta), sin(theta), cos(theta));
+				float2x2 M = mul(R, S);
+				i.vertex = mul(UNITY_MATRIX_MV, i.vertex);
+				//float2 localPos = mul(C, i.texcoord.xy);
+				//float4 center = i.vertex - i.normal * i.texcoord;
+				//pos.xy = center + mul(M, localPos);
 				
-				o.vertex = mul(UNITY_MATRIX_P, pos);
+				o.vertex = mul(UNITY_MATRIX_P, i.vertex);
 				o.texcoord = TRANSFORM_TEX(i.texcoord, _MainTex);
 				o.color = float4(1, 1, 1, i.color.a);
 				
