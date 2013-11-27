@@ -2,33 +2,16 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Toei/Toei.shader">
     <Files>
-      <File FileName="Assets/Toei/Toei.shader" Line="36" Column="49" />
+      <File FileName="../../../../Downloads/builtin_shaders-4.2.0/CGIncludes/UnityCG.cginc" Line="1" Column="1" />
+      <File FileName="Assets/Toei/Toei.shader" Line="36" Column="7" />
+      <File FileName="Assets/Toei/Editor/ToeiMeshGen.cs" Line="7" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Assembly-CSharp" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Common" expanded="True" />
-              <Node name="Fireworks02" expanded="True" />
-              <Node name="Soul" expanded="True" />
-              <Node name="Toei" expanded="True">
-                <Node name="Toei.shader" selected="True" />
-              </Node>
-              <Node name="Trail" expanded="True" />
-            </Node>
-          </Node>
-          <Node name="Assembly-CSharp-Editor" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Toei" expanded="True">
-                <Node name="Editor" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
+        <State />
       </Pad>
       <Pad Id="ClassPad">
-        <State expanded="True" selected="True" />
+        <State selected="True" />
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
